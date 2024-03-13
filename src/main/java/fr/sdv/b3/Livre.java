@@ -2,12 +2,15 @@ package fr.sdv.b3;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "livre")
-public class Livre {
+public class Livre implements Serializable {
     @Id
     @Column(name="ID")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -16,13 +19,42 @@ public class Livre {
     private String titre;
     @Column(name="AUTEUR")
     private String auteur;
+    @ManyToMany(mappedBy="livres")
+    private Set<Emprunt> emprunts;
 
     public Livre() {
+    }
+    public Livre(String titre, String auteur, Set<Emprunt> emprunts) {
+
+        this.titre = titre;
+        this.auteur = auteur;
+        this.emprunts = emprunts;
     }
 
     public Livre(String titre, String auteur) {
         this.titre = titre;
         this.auteur = auteur;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Livre livre = (Livre) o;
+        return Objects.equals(id, livre.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    public Set<Emprunt> getEmprunts() {
+        return emprunts;
+    }
+
+    public void setEmprunts(Set<Emprunt> emprunts) {
+        this.emprunts = emprunts;
     }
 
     public void setId(Integer id) {
@@ -58,18 +90,6 @@ public class Livre {
                 '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Livre livre = (Livre) o;
-        return Objects.equals(id, livre.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
         EntityManager em = emf.createEntityManager();
@@ -103,7 +123,7 @@ public class Livre {
         }
 
         // afficher la liste de tous les livres
-        TypedQuery<Livre> query4 = em.createQuery("select l from Livre l", Livre.class);
+        TypedQuery<Livre> query4 = em.createQuery("select titre, auteur from Livre ", Livre.class);
         List<Livre> livre4 = query4.getResultList();
         System.out.println(livre4);
 
