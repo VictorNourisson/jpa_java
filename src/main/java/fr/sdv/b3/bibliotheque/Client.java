@@ -1,4 +1,4 @@
-package fr.sdv.b3;
+package fr.sdv.b3.bibliotheque;
 
 import jakarta.persistence.*;
 

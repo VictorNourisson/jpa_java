@@ -1,5 +1,7 @@
-package fr.sdv.b3;
+package fr.sdv.b3.bibliotheque;
 
+import fr.sdv.b3.bibliotheque.Emprunt;
+import fr.sdv.b3.bibliotheque.Livre;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

@@ -1,9 +1,8 @@
-package fr.sdv.b3;
+package fr.sdv.b3.bibliotheque;
 
 import jakarta.persistence.*;
 
 import java.io.Serializable;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.Set;

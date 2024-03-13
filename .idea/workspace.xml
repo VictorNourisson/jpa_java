@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fff651e-d0f0-4b37-afed-59b854847aa3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/Emprunt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/TestBibliotheque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/Adresse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/AssuranceVie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/Banque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/Compte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/LivretA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/TestApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/banque/Virement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/Livre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/Livre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/bibliotheque/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/Emprunt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/bibliotheque/Emprunt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/Livre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/bibliotheque/Livre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/TestBibliotheque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdv/b3/bibliotheque/TestBibliotheque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710234024433</updated>
       <workItem from="1710234025495" duration="16411000" />
-      <workItem from="1710318242967" duration="980000" />
+      <workItem from="1710318242967" duration="10805000" />
     </task>
     <servers />
   </component>
